@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -60,6 +59,10 @@ select {
   font: inherit;
 }
 
+* {
+  line-height: 1em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
@@ -92,27 +95,343 @@ select {
   src: url("../fonts/Oswald-Bold.ttf");
 }
 
-.rating {
-  width: 125px;
-  height: 25px;
+body {
+  background: #f6f6f6;
 }
 
-.rating input[type="radio"] {
+body .container {
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .head .image {
+  background-image: url(/images/lightbringer-trans.png);
+  background-color: #eaf2f4;
+  width: 48%;
+  min-width: 400px;
+  min-height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body .container .head .info {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .container .head .info .title {
+  font-family: "Oswald-Bold";
+  font-size: 1.25em;
+  color: #2c303d;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: left;
+}
+
+body .container .head .info .id {
+  font-size: .7em;
+  font-family: "OpenSans-Medium";
+  color: rgba(44, 48, 61, 0.4);
+  line-height: 3.25;
+  text-align: left;
+}
+
+body .container .head .info .price {
+  font-size: 1.35em;
+  font-family: "OpenSans-Bold";
+  text-transform: uppercase;
+  text-align: left;
+}
+
+body .container .head .info .price .through {
+  text-decoration: line-through;
+  color: #2c303d;
+}
+
+body .container .head .info .price .actual {
+  color: #ce2c52;
+}
+
+body .container .head .info .rating {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .container .head .info .rating p {
+  color: #2c87ce;
+  font-size: 1em;
+  font-family: "OpenSans-Bold";
+  margin-left: 25px;
+  letter-spacing: .8px;
+}
+
+body .container .head .info .rating input[type="radio"] {
   display: none;
 }
 
-.label_rating {
+body .container .head .info .rating .label_rating {
   float: right;
   display: block;
-  width: 25px;
-  height: 25px;
-  background: url(../img/rating.png) round;
+  height: 15px;
+  width: 15px;
+  margin: 0 1.5px;
+  background: url(/images/icons/rating.png) round;
+  cursor: pointer;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+body .container .head .info .label_rating:hover,
+body .container .head .info .label_rating:hover ~ .label_rating,
+body .container .head .info input[type="radio"]:checked ~ .label_rating {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+body .container .head .info .share {
+  position: relative;
+}
+
+body .container .head .info .share #share_panel {
+  position: absolute;
+  min-width: 300px;
+  min-height: 100px;
+}
+
+body .container .head .info .share #share_panel .icons {
+  width: 100%;
+  height: 80%;
+  min-height: 80px;
+  background-image: url(/images/share_bg.png);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .container .head .info .share #share_panel .icons a {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  width: 35px;
+  height: 35px;
+  border: solid 2px #2c87ce;
+  border-radius: 50%;
+}
+
+body .container .head .info .share #share_panel .icons a img {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+body .container .head .info .share #share_panel .icons #close {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  width: 35px;
+  height: 35px;
+  padding: 5px;
   cursor: pointer;
 }
 
-/*Пишем правила смены положения background-а*/
-.rating .label_rating:hover,
-.rating .label_rating:hover ~ .label_rating,
-.rating input[type="radio"]:checked ~ .label_rating {
-  background-color: white;
+body .container .head .info .details p {
+  font-size: 1em;
+  font-family: "OpenSans-Light";
+  color: #282828;
+  line-height: 1.333;
+  text-align: left;
+}
+
+body .container .head .info .size, body .container .head .info .color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .head .info .size p, body .container .head .info .color p {
+  font-family: "OpenSans-Bold";
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+body .container .head .info .size p.mobile, body .container .head .info .color p.mobile {
+  display: none;
+}
+
+body .container .head .info .size .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 45%;
+  min-width: 200px;
+}
+
+body .container .head .info .size .selection div {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  border: 2px solid #cfcfcf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .head .info .color {
+  width: 65%;
+  min-width: 300px;
+}
+
+body .container .head .info .color .colors {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .head .info .color .colors div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+body .container .head .info .color .colors div:nth-child(1) {
+  background-color: #77d8e7;
+}
+
+body .container .head .info .color .colors div:nth-child(2) {
+  background-color: #96c795;
+}
+
+body .container .head .info .color .colors div:nth-child(3) {
+  background-color: #ce92a1;
+}
+
+body .container .head .info .color .colors div:nth-child(4) {
+  background-color: #aa93cf;
+}
+
+body .container .head .info .add_button {
+  font-family: "OpenSans-Bold";
+}
+
+body .container .head .info .add_button button {
+  background-color: #8ae6cf;
+  text-align: center;
+  text-transform: uppercase;
+  height: 15%;
+  width: 50%;
+  min-height: 45px;
+  min-width: 210px;
+  border-radius: 50px;
+  border: none;
 }
