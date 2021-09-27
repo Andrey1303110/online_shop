@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -89,4 +90,29 @@ select {
 @font-face {
   font-family: "Oswald-Bold";
   src: url("../fonts/Oswald-Bold.ttf");
+}
+
+.rating {
+  width: 125px;
+  height: 25px;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.label_rating {
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/rating.png) round;
+  cursor: pointer;
+}
+
+/*Пишем правила смены положения background-а*/
+.rating .label_rating:hover,
+.rating .label_rating:hover ~ .label_rating,
+.rating input[type="radio"]:checked ~ .label_rating {
+  background-color: white;
 }
