@@ -95,6 +95,11 @@ select {
   src: url("../fonts/Oswald-Bold.ttf");
 }
 
+.through {
+  text-decoration: line-through;
+  color: #2c303d;
+}
+
 body {
   background: #f6f6f6;
 }
@@ -124,6 +129,7 @@ body .container .head {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 body .container .head .image {
@@ -183,13 +189,11 @@ body .container .head .info .price {
 }
 
 body .container .head .info .price .through {
-  text-decoration: line-through;
-  color: #2c303d;
+  margin-right: 25px;
 }
 
 body .container .head .info .price .actual {
   color: #ce2c52;
-  margin-left: 25px;
 }
 
 body .container .head .info .rating {
@@ -336,9 +340,15 @@ body .container .head .info .size .mobile, body .container .head .info .color .m
   display: none;
 }
 
+body .container .head .info .size .selection div, body .container .head .info .size .colors div, body .container .head .info .color .selection div, body .container .head .info .color .colors div {
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 body .container .head .info .size .selection div:hover, body .container .head .info .size .colors div:hover, body .container .head .info .color .selection div:hover, body .container .head .info .color .colors div:hover {
-  -webkit-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
 }
 
 body .container .head .info .size .selection {
@@ -439,4 +449,111 @@ body .container .head .info .add_button button {
   min-width: 210px;
   border-radius: 50px;
   border: none;
+}
+
+body .container .down .text {
+  font-family: "OpenSans-Bold";
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+body .container .down .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .down .products .product {
+  width: 30%;
+  min-width: 265px;
+  min-height: 265px;
+  text-transform: uppercase;
+}
+
+body .container .down .products .product:nth-child(1) .bg_image {
+  background-image: url(/images/1.png);
+}
+
+body .container .down .products .product:nth-child(2) .bg_image {
+  background-image: url(/images/2.png);
+}
+
+body .container .down .products .product:nth-child(3) .bg_image {
+  background-image: url(/images/3.png);
+}
+
+body .container .down .products .product:nth-child(4) .bg_image {
+  background-image: url(/images/4.png);
+}
+
+body .container .down .products .product:nth-child(5) .bg_image {
+  background-image: url(/images/5.png);
+}
+
+body .container .down .products .product:nth-child(6) .bg_image {
+  background-image: url(/images/6.png);
+}
+
+body .container .down .products .product .bg_image {
+  width: 100%;
+  height: 100%;
+  min-height: 265px;
+  min-width: 265px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: "OpenSans-Bold";
+}
+
+body .container .down .products .product .bg_image .pr_price {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  background-color: #8ae6cf;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 24px;
+  line-height: 24px;
+}
+
+body .container .down .products .product .bg_image .pr_price span {
+  margin: 0 10px;
+}
+
+body .container .down .products .product .bg_image .pr_price span:nth-child(2) {
+  color: #ce2c52;
+}
+
+body .container .down .products .product .bg_image .pr_price .actual {
+  color: #2c303d;
+}
+
+body .container .down .products .product .bg_image .pr_price .through {
+  margin-right: 15px;
+}
+
+body .container .down .products .product .pr_title {
+  font-family: "OpenSans-Bold";
+  font-size: 1em;
+  margin: 15px 0 20px;
+  text-align: center;
+  letter-spacing: 1px;
 }

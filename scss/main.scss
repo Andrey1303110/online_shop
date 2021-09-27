@@ -73,6 +73,11 @@ select {
 
 @import "../scss/fonts.scss";
 
+.through {
+  text-decoration: line-through;
+  color: rgb(44, 48, 61);
+}
+
 body {
   background: rgb(246, 246, 246);
   .container {
@@ -86,6 +91,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-bottom: 70px;
       .image {
         background-image: url(/images/lightbringer-trans.png);
         background-color: rgb(234, 242, 244);
@@ -125,12 +131,10 @@ body {
           text-transform: uppercase;
           text-align: left;
           .through {
-            text-decoration: line-through;
-            color: rgb(44, 48, 61);
+            margin-right: 25px;
           }
           .actual {
             color: rgb(206, 44, 82);
-            margin-left: 25px;
           }
         }
         .rating {
@@ -235,8 +239,10 @@ body {
           }
           .selection, .colors {
             div {
+              cursor: pointer;
+              transition: .3s ease-in-out;
               &:hover {
-                box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .35);
+                box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .35);
               }
             }
           }
@@ -304,6 +310,86 @@ body {
             min-width: 210px;
             border-radius: 50px;
             border: none;
+          }
+        }
+      }
+    }
+    .down {
+      .text {
+        font-family: "OpenSans-Bold";
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+      }
+      .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        .product {
+          width: 30%;
+          min-width: 265px;
+          min-height: 265px;
+          text-transform: uppercase;
+          &:nth-child(1) .bg_image {
+            background-image: url(/images/1.png);
+          }
+          &:nth-child(2) .bg_image {
+            background-image: url(/images/2.png);
+          }
+          &:nth-child(3) .bg_image {
+            background-image: url(/images/3.png);
+          }
+          &:nth-child(4) .bg_image {
+            background-image: url(/images/4.png);
+          }
+          &:nth-child(5) .bg_image {
+            background-image: url(/images/5.png);
+          }
+          &:nth-child(6) .bg_image {
+            background-image: url(/images/6.png);
+          }
+          .bg_image {
+            width: 100%;
+            height: 100%;
+            min-height: 265px;
+            min-width: 265px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            font-family: "OpenSans-Bold";
+            .pr_price {
+              position: absolute;
+              bottom: 25px;
+              right: 0;
+              background-color: rgb(138, 230, 207);
+              width: fit-content;
+              height: 24px;
+              line-height: 24px;
+              span {
+                margin: 0 10px;
+                &:nth-child(2) {
+                  color: rgb(206, 44, 82);
+                }
+              }
+              .actual {
+                color: rgb(44, 48, 61);
+              }
+              .through {
+                margin-right: 15px;
+              }
+            }
+          }
+          .pr_title {
+            font-family: "OpenSans-Bold";
+            font-size: 1em;
+            margin: 15px 0 20px;
+            text-align: center;
+            letter-spacing: 1px;
           }
         }
       }
