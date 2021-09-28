@@ -121,7 +121,6 @@
                     justify-content: space-evenly;
                     align-content: center;
                     a {
-                      //transform: translateY(15%);
                       width: 35px;
                       height: 35px;
                       border: solid 2px rgb(44, 135, 206);
@@ -133,7 +132,6 @@
                       }
                     }
                     #close {
-                      //transform: translateY(15%);
                       width: 35px;
                       height: 35px;
                       padding: 5px;
@@ -147,8 +145,10 @@
                   font-size: 1em;
                   font-family: "OpenSans-Light";
                   color: rgb(40, 40, 40);
-                  line-height: 1.333;
                   text-align: left;
+                  &:nth-child(1) {
+                    display: none;
+                  }
                 }
               }
               .size, .color {

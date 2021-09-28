@@ -145,8 +145,10 @@
                       font-size: 1em * $font_cof;
                       font-family: "OpenSans-Light";
                       color: rgb(40, 40, 40);
-                      line-height: 1.333;
                       text-align: left;
+                      &:nth-child(1) {
+                        display: none;
+                      }
                     }
                   }
                   .size, .color {

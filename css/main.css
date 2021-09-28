@@ -779,8 +779,10 @@ select {
     font-size: 1em;
     font-family: "OpenSans-Light";
     color: #282828;
-    line-height: 1.333;
     text-align: left;
+  }
+  body .container .head .info .details p:nth-child(1) {
+    display: none;
   }
   body .container .head .info .size, body .container .head .info .color {
     display: -webkit-box;
@@ -1274,8 +1276,10 @@ select {
     font-size: 1.15em;
     font-family: "OpenSans-Light";
     color: #282828;
-    line-height: 1.333;
     text-align: left;
+  }
+  body .container .head .info .details p:nth-child(1) {
+    display: none;
   }
   body .container .head .info .size, body .container .head .info .color {
     display: -webkit-box;
@@ -1769,8 +1773,10 @@ select {
     font-size: 1.75em;
     font-family: "OpenSans-Light";
     color: #282828;
-    line-height: 1.333;
     text-align: left;
+  }
+  body .container .head .info .details p:nth-child(1) {
+    display: none;
   }
   body .container .head .info .size, body .container .head .info .color {
     display: -webkit-box;
