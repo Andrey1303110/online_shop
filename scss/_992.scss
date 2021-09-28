@@ -9,6 +9,9 @@
           flex-direction: column;
           .head {
             width: 100%;
+            height: 100vh;
+            min-height: 400px;
+            max-height: 500px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -18,7 +21,7 @@
               background-color: rgb(234, 242, 244);
               width: 48%;
               min-width: 400px;
-              min-height: 420px;
+              min-height: 400px;
               background-position: center;
               background-repeat: no-repeat;
               background-size: contain;
@@ -155,6 +158,7 @@
                   display: block;
                   font-family: "OpenSans-Bold";
                   font-size: 1em;
+                  line-height: 1em;
                   text-transform: uppercase;
                   display: block;
                   width: 10%;
