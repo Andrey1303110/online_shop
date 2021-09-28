@@ -255,6 +255,8 @@ body .container .head .info .share #share_panel {
   position: absolute;
   min-width: 280px;
   min-height: 100px;
+  left: 10px;
+  top: -15px;
 }
 
 body .container .head .info .share #share_panel .icons {
