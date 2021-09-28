@@ -18,6 +18,9 @@ $circle_cof: 55px;
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 70px;
+            .mobile_title {
+              display: none;
+            }
             .image {
               background-image: url(/images/lightbringer-trans.png);
               background-color: rgb(234, 242, 244);
