@@ -183,7 +183,7 @@
                     input {
                         width: 40px;
                         height: 40px;
-                        visibility: collapse;
+                        visibility: hidden;
                         margin: 0;
                         border: 0;
                         &::after {
@@ -245,7 +245,7 @@
                     input {
                         width: 40px;
                         height: 40px;
-                        visibility: collapse;
+                        visibility: hidden;
                         margin: 0;
                         border: 0;
                         &::after {

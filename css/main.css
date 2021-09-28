@@ -361,7 +361,7 @@ select {
   body .container .head .info .size .selection form input {
     width: 40px;
     height: 40px;
-    visibility: collapse;
+    visibility: hidden;
     margin: 0;
     border: 0;
   }
@@ -452,7 +452,7 @@ select {
   body .container .head .info .color .colors form input {
     width: 40px;
     height: 40px;
-    visibility: collapse;
+    visibility: hidden;
     margin: 0;
     border: 0;
   }
