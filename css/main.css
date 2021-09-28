@@ -1106,7 +1106,7 @@ select {
   body .container .head {
     width: 100%;
     height: 100vh;
-    min-height: 700px;
+    min-height: 750px;
     max-height: 1000px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1226,17 +1226,17 @@ select {
   }
   body .container .head .info .share #share_panel {
     position: absolute;
-    min-width: 280px;
-    min-height: 100px;
+    min-width: 400px;
+    min-height: 160px;
     -webkit-transform: translate(35%, -20%);
             transform: translate(35%, -20%);
   }
   body .container .head .info .share #share_panel .icons {
     width: 100%;
     height: 80%;
-    min-height: 100px;
+    min-height: 155px;
     background-image: url(/images/share_bg.png);
-    background-position: center 5px;
+    background-position: center 10px;
     background-repeat: no-repeat;
     background-size: 100%;
     display: -webkit-box;
@@ -1256,8 +1256,8 @@ select {
         align-content: center;
   }
   body .container .head .info .share #share_panel .icons a {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border: solid 2px #2c87ce;
     border-radius: 50%;
   }
@@ -1267,8 +1267,8 @@ select {
     padding: 8px;
   }
   body .container .head .info .share #share_panel .icons #close {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     padding: 5px;
     cursor: pointer;
   }
@@ -1400,7 +1400,9 @@ select {
     font-size: 2.3625em;
   }
   body .container .head .info .color {
-    width: 65%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 75px;
   }
   body .container .head .info .color .colors {
