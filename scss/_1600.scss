@@ -1,0 +1,379 @@
+@media screen and (min-width: 1600px) {
+    $font_cof: 1.75;
+    $circle_cof: 75px;
+        body {
+            background: rgb(246, 246, 246);
+            .container {
+              width: 100%;
+              height: 100%;
+              padding: 50px 40px;
+              display: flex;
+              flex-direction: column;
+              .head {
+                width: 100%;
+                height: 100vh;
+                min-height: 700px;
+                max-height: 1000px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 70px;
+                .image {
+                  background-image: url(/images/lightbringer-trans.png);
+                  background-color: rgb(234, 242, 244);
+                  width: 45%;
+                  height: 100%;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                }
+                .info {
+                  width: 48%;        
+                  display: flex;
+                  flex-direction: column;
+                  align-content: center;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  .title {
+                    font-family: "Oswald-Bold";
+                    font-size: 1.25em * $font_cof;
+                    color: rgb(44, 48, 61);
+                    text-transform: uppercase;
+                    text-align: left;
+                  }
+                  .id {
+                    margin-top: -5px;
+                    font-size: .7em * $font_cof;
+                    font-family: "OpenSans-Medium";
+                    color: rgba(44, 48, 61, 0.4);
+                    text-align: left;
+                  }
+                  .price {
+                    margin: 10px 0;
+                    font-size: 1.35em * $font_cof;
+                    font-family: "OpenSans-Bold";
+                    text-transform: uppercase;
+                    text-align: left;
+                    .through {
+                      margin-right: 25px;
+                    }
+                    .actual {
+                      color: rgb(206, 44, 82);
+                    }
+                  }
+                  .rating {
+                    width: max-content;
+                    height: 15px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    #share_button {
+                      color: rgb(44, 135, 206);
+                      font-size: 1em * $font_cof;
+                      font-family: "OpenSans-Bold";
+                      margin-left: 25px;
+                      letter-spacing: .8px;
+                      cursor: pointer;
+                    }
+                    input[type="radio"] {
+                      display: none;
+                    }
+                    .label_rating {
+                      float: right;
+                      display: block;
+                      height: 30px;
+                      width: 30px;
+                      margin: 0 2px;
+                      background: url(/images/icons/rating.png) round;
+                      cursor: pointer;
+                      filter: grayscale(1);
+                    }
+                  }
+                  .label_rating:hover, 
+                  .label_rating:hover ~ .label_rating,
+                  input[type="radio"]:checked ~ .label_rating {
+                    filter: grayscale(0);
+                  }
+                  .share {
+                    position: relative;
+                    #share_panel {
+                      position: absolute;
+                      min-width: 280px;
+                      min-height: 100px;
+                      transform: translate(35%, -20%);
+                      .icons {
+                        width: 100%;
+                        height: 80%;
+                        min-height: 100px;
+                        background-image: url(/images/share_bg.png);
+                        background-position: center 5px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        align-content: center;
+                        a {
+                          //transform: translateY(15%);
+                          width: 35px;
+                          height: 35px;
+                          border: solid 2px rgb(44, 135, 206);
+                          border-radius: 50%;
+                          img {
+                            width: 100%;
+                            height: 100%;
+                            padding: 8px;
+                          }
+                        }
+                        #close {
+                          //transform: translateY(15%);
+                          width: 35px;
+                          height: 35px;
+                          padding: 5px;
+                          cursor: pointer;
+                        }
+                      }
+                    }
+                  }
+                  .details {
+                    p {
+                      font-size: 1em * $font_cof;
+                      font-family: "OpenSans-Light";
+                      color: rgb(40, 40, 40);
+                      line-height: 1.333;
+                      text-align: left;
+                    }
+                  }
+                  .size, .color {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    min-width: 300px;
+                    .title_select {
+                      display: block;
+                      font-family: "OpenSans-Bold";
+                      font-size: 1em * $font_cof;
+                      line-height: 1em * $font_cof;
+                      text-transform: uppercase;
+                      display: block;
+                      width: 10%;
+                      min-width: 80px;
+                    }
+                    .mobile {
+                      display: none;
+                    }
+                  }
+                  .size {
+                    .selection {
+                      display: flex;
+                      align-items: center;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      align-content: center;
+                      width: 300px;
+                      margin-left: 50px;
+                      form {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                        input {
+                            width: $circle_cof;
+                            height: $circle_cof;
+                            visibility: hidden;
+                            margin: 0;
+                            border: 0;
+                            &::after {
+                              position: relative;
+                              display: flex;
+                              flex-direction: row;
+                              align-content: center;
+                              justify-content: center;
+                              align-items: center;
+                              width: $circle_cof;
+                              height: $circle_cof;
+                              background-color: rgb(255, 255, 255);
+                              text-align: center;
+                              font-family: "OpenSans-Bold";
+                              font-size: 1em * $font_cof;
+                              border-radius: 50%;
+                              border: 2px solid rgb(207, 207, 207);
+                              visibility: visible;
+                              cursor: pointer;
+                              transition: box-shadow .4s ease-in-out,
+                                          font .15s ease-in-out;
+                            }
+                            &:nth-child(1)::after {
+                                content: 'XS';
+                            }
+                            &:nth-child(2)::after {
+                                content: 'S';
+                            }
+                            &:nth-child(3)::after {
+                                content: 'M';
+                            }
+                            &:checked::after {
+                                box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, .35);
+                                font-size: 1.35em * $font_cof;
+                            }
+                        }
+                      }
+                    }
+                  }
+                  .color {
+                    width: 65%;
+                    height: $circle_cof;
+                    .colors {
+                      width: 412.5px;
+                      margin-left: 50px;
+                      height: 100%;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      form {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                        input {
+                            width: $circle_cof;
+                            height: $circle_cof;
+                            visibility: hidden;
+                            margin: 0;
+                            border: 0;
+                            &::after {
+                              position: relative;
+                              width: $circle_cof;
+                              height: $circle_cof;
+                              border-radius: 50%;
+                              content: '';
+                              display: inline-block;
+                              visibility: visible;
+                              cursor: pointer;
+                              transition: .4s ease-in-out;
+                            }
+                            &:nth-child(1)::after {
+                                background-color: rgb(119, 216, 231);
+                            }
+                            &:nth-child(2)::after {
+                                background-color: rgb(150, 199, 149);
+                            }
+                            &:nth-child(3)::after {
+                                background-color: rgb(206, 146, 161);
+                            }
+                            &:nth-child(4)::after {
+                                background-color: rgb(170, 147, 207);
+                            }
+                            &:checked::after {
+                                box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, .35);
+                            }
+                        }
+                      }
+                    }  
+                  }
+                  .add_button {
+                    font-family: "OpenSans-Bold";
+                    button {
+                      background-color: rgb(138, 230, 207);
+                      text-align: center;
+                      text-transform: uppercase;
+                      height: 15%;
+                      width: 50%;
+                      min-height: 80px;
+                      min-width: 350px;
+                      border-radius: 50px;
+                      font-size: 1em * $font_cof;
+                      border: none;
+                      cursor: pointer;
+                      transition: all ease-in-out .25s;
+                      &:hover {
+                        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .35);
+                      }
+                      &:active {
+                        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .35);
+                        color: whitesmoke;
+                      }
+                    }
+                  }
+                }
+              }
+              .down {
+                .text {
+                  font-family: "OpenSans-Bold";
+                  text-transform: uppercase;
+                  font-size: 1em * $font_cof;
+                  letter-spacing: 3px;
+                  margin-bottom: 20px;
+                }
+                .products {
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  align-content: center;
+                  justify-content: space-between;
+                  align-items: center;
+                  .product {
+                    width: 30%;
+                    min-width: 365px;
+                    min-height: 365px;
+                    max-width: 500px;
+                    text-transform: uppercase;
+                    .bg_image {
+                      width: 100%;
+                      height: 100%;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      position: relative;
+                      font-family: "OpenSans-Bold";
+                      transition: all ease-in-out .3s;
+                      img {
+                        width: 100%;
+                      }
+                      &:hover {
+                        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, .45);
+                      }
+                      .pr_price {
+                        position: absolute;
+                        bottom: 25px;
+                        right: 0;
+                        background-color: rgb(138, 230, 207);
+                        width: fit-content;
+                        height: 24px;
+                        line-height: 24px;
+                        span {
+                          margin: 0 10px;
+                          &:nth-child(2) {
+                            color: rgb(206, 44, 82);
+                          }
+                        }
+                        .actual {
+                          color: rgb(44, 48, 61);
+                        }
+                        .through {
+                          margin-right: 15px;
+                        }
+                      }
+                    }
+                    .pr_title {
+                      font-family: "OpenSans-Bold";
+                      font-size: 1em * $font_cof;
+                      margin: 15px 0 20px;
+                      text-align: center;
+                      letter-spacing: 1px;
+                    }
+                  }
+                }
+              }
+            } 
+          }
+    }
