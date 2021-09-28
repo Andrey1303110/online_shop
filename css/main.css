@@ -520,6 +520,13 @@ body .container .down .products .product .bg_image {
   background-size: cover;
   position: relative;
   font-family: "OpenSans-Bold";
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+body .container .down .products .product .bg_image:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.45);
 }
 
 body .container .down .products .product .bg_image .pr_price {
