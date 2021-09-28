@@ -174,6 +174,7 @@ body .container .head .info .title {
 }
 
 body .container .head .info .id {
+  margin-top: -5px;
   font-size: .7em;
   font-family: "OpenSans-Medium";
   color: rgba(44, 48, 61, 0.4);
@@ -182,6 +183,7 @@ body .container .head .info .id {
 }
 
 body .container .head .info .price {
+  margin: 10px 0;
   font-size: 1.35em;
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
@@ -216,12 +218,13 @@ body .container .head .info .rating {
           justify-content: flex-start;
 }
 
-body .container .head .info .rating p {
+body .container .head .info .rating #share_button {
   color: #2c87ce;
   font-size: 1em;
   font-family: "OpenSans-Bold";
   margin-left: 25px;
   letter-spacing: .8px;
+  cursor: pointer;
 }
 
 body .container .head .info .rating input[type="radio"] {
@@ -451,6 +454,20 @@ body .container .head .info .add_button button {
   min-width: 210px;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .25s;
+  transition: all ease-in-out .25s;
+}
+
+body .container .head .info .add_button button:hover {
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.35);
+}
+
+body .container .head .info .add_button button:active {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+  color: whitesmoke;
 }
 
 body .container .down .text {
