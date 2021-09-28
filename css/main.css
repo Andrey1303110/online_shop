@@ -284,6 +284,11 @@ select {
     color: #282828;
     text-align: left;
   }
+  body .container .head .info .details p:nth-child(1) {
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold";
+    margin-bottom: 15px;
+  }
   body .container .head .info .size, body .container .head .info .color {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -484,8 +489,8 @@ select {
     text-transform: uppercase;
     height: 15%;
     width: 50%;
-    min-height: 45px;
-    min-width: 210px;
+    min-height: 40px;
+    min-width: 220px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
@@ -504,9 +509,10 @@ select {
   body .container .down .text {
     font-family: "OpenSans-Bold";
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: 3px;
     margin-bottom: 20px;
+    text-align: center;
   }
   body .container .down .products {
     display: -webkit-box;
@@ -528,10 +534,10 @@ select {
             align-items: center;
   }
   body .container .down .products .product {
-    width: 30%;
-    min-width: 265px;
-    min-height: 265px;
-    max-width: 345px;
+    width: 48%;
+    min-width: 325px;
+    min-height: 325px;
+    max-width: 425px;
     text-transform: uppercase;
   }
   body .container .down .products .product .bg_image {
@@ -542,6 +548,7 @@ select {
     background-size: cover;
     position: relative;
     font-family: "OpenSans-Bold";
+    font-size: 1.15em;
     -webkit-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
   }
@@ -554,14 +561,13 @@ select {
   }
   body .container .down .products .product .bg_image .pr_price {
     position: absolute;
-    bottom: 25px;
+    bottom: 0;
     right: 0;
-    background-color: #8ae6cf;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 24px;
-    line-height: 24px;
+    background-color: #8ae6cfcc;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
   }
   body .container .down .products .product .bg_image .pr_price span {
     margin: 0 10px;
@@ -573,7 +579,7 @@ select {
     color: #2c303d;
   }
   body .container .down .products .product .bg_image .pr_price .through {
-    margin-right: 15px;
+    display: none;
   }
   body .container .down .products .product .pr_title {
     font-family: "OpenSans-Bold";
