@@ -114,7 +114,7 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 35px 0;
+    padding: 35px 0 0;
   }
   body .container .head {
     width: 100%;
@@ -181,9 +181,9 @@ select {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 70vh;
-    min-height: 600px;
-    max-height: 700px;
+    height: 75vh;
+    min-height: 650px;
+    max-height: 750px;
   }
   body .container .head .info .title {
     display: none;
@@ -348,6 +348,7 @@ select {
     -ms-flex-line-pack: center;
         align-content: center;
     width: 60%;
+    min-width: 200px;
   }
   body .container .head .info .size .selection form {
     width: 100%;
@@ -427,6 +428,7 @@ select {
   }
   body .container .head .info .color .colors {
     width: 60%;
+    min-width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -494,7 +496,7 @@ select {
   }
   body .container .head .info .add_button {
     width: 100%;
-    height: 130px;
+    margin: 25px 0;
     font-family: "OpenSans-Bold";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -516,8 +518,8 @@ select {
     height: 15%;
     width: 100%;
     min-height: 40px;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 150px;
+    max-width: 280px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
@@ -532,6 +534,9 @@ select {
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
             box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
     color: whitesmoke;
+  }
+  body .container .down {
+    margin-top: 25px;
   }
   body .container .down .text {
     font-family: "OpenSans-Bold";
@@ -553,19 +558,42 @@ select {
         flex-wrap: wrap;
     -ms-flex-line-pack: center;
         align-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   body .container .down .products .product {
-    width: 48%;
+    position: relative;
+    width: 60%;
     min-width: 200px;
     min-height: 200px;
     max-width: 335px;
     text-transform: uppercase;
+    /*&::before {
+                      content: url('/images/icons/perv.png');
+                      font-size: 20px;
+                      position: absolute;
+                      top: 50%;
+                      left: -45px;
+                      transform: translateY(-100%);
+                      &:active {
+                        filter: blur(10);
+                      }
+                    }
+                    &::after {
+                      content: url('/images/icons/NEXT.png');
+                      font-size: 20px;
+                      position: absolute;
+                      top: 50%;
+                      right: -45px;
+                      transform: translateY(-100%);
+                    }*/
+  }
+  body .container .down .products .product:not(:nth-child(1)) {
+    display: none;
   }
   body .container .down .products .product .bg_image {
     width: 100%;
@@ -575,7 +603,7 @@ select {
     background-size: cover;
     position: relative;
     font-family: "OpenSans-Bold";
-    font-size: 1.05em;
+    font-size: .95em;
     -webkit-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
   }
@@ -617,7 +645,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 479px) and (max-width: 768px) {
   body {
     background: #f6f6f6;
   }

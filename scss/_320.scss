@@ -7,7 +7,7 @@
               height: 100%;
               display: flex;
               flex-direction: column;
-              padding: 35px 0;
+              padding: 35px 0 0;
               .head {
                 width: 100%;
                 display: flex;
@@ -51,9 +51,9 @@
                   align-content: center;
                   justify-content: space-between;
                   align-items: flex-start;
-                  height: 70vh;
-                  min-height: 600px;
-                  max-height: 700px;
+                  height: 75vh;
+                  min-height: 650px;
+                  max-height: 750px;
                   .title {
                     display: none;
                   }
@@ -179,6 +179,7 @@
                       justify-content: space-between;
                       align-content: center;
                       width: 60%;
+                      min-width: 200px;
                       form {
                         width: 100%;
                         height: 100%;
@@ -235,6 +236,7 @@
                     height: $circle_cof * 2;
                     .colors {
                       width: 60%;
+                      min-width: 200px;
                       display: flex;
                       flex-direction: row;
                       justify-content: space-between;
@@ -284,7 +286,7 @@
                   }
                   .add_button {
                     width: 100%;
-                    height: 130px;
+                    margin: 25px 0;
                     font-family: "OpenSans-Bold";
                     display: flex;
                     justify-content: center;
@@ -298,8 +300,8 @@
                       height: 15%;
                       width: 100%;
                       min-height: 40px;
-                      min-width: 200px;
-                      max-width: 300px;
+                      min-width: 150px;
+                      max-width: 280px;
                       border-radius: 50px;
                       border: none;
                       cursor: pointer;
@@ -316,6 +318,7 @@
                 }
               }
               .down {
+                margin-top: 25px;
                 .text {
                   font-family: "OpenSans-Bold";
                   text-transform: uppercase;
@@ -329,14 +332,37 @@
                   flex-direction: row;
                   flex-wrap: wrap;
                   align-content: center;
-                  justify-content: space-between;
+                  justify-content: center;
                   align-items: center;
                   .product {
-                    width: 48%;
+                    position: relative;
+                    width: 60%;
                     min-width: 200px;
                     min-height: 200px;
                     max-width: 335px;
                     text-transform: uppercase;
+                    /*&::before {
+                      content: url('/images/icons/perv.png');
+                      font-size: 20px;
+                      position: absolute;
+                      top: 50%;
+                      left: -45px;
+                      transform: translateY(-100%);
+                      &:active {
+                        filter: blur(10);
+                      }
+                    }
+                    &::after {
+                      content: url('/images/icons/NEXT.png');
+                      font-size: 20px;
+                      position: absolute;
+                      top: 50%;
+                      right: -45px;
+                      transform: translateY(-100%);
+                    }*/
+                    &:not(:nth-child(1)) {
+                      display: none;
+                    }
                     .bg_image {
                       width: 100%;
                       height: 100%;
@@ -345,7 +371,7 @@
                       background-size: cover;
                       position: relative;
                       font-family: "OpenSans-Bold";
-                      font-size: 1.05em;
+                      font-size: .95em;
                       transition: all ease-in-out .3s;
                       img {
                         width: 100%;
