@@ -318,6 +318,9 @@ $circle_cof: 55px;
               letter-spacing: 3px;
               margin-bottom: 20px;
             }
+            #arrows { 
+              display: none;
+            }
             .products {
               display: flex;
               flex-direction: row;
@@ -325,9 +328,6 @@ $circle_cof: 55px;
               align-content: center;
               justify-content: space-between;
               align-items: center;
-              .arrows { 
-                display: none;
-              }
               .product {
                 width: 30%;
                 min-width: 365px;
