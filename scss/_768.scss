@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 $circle_cof: 40px;
     body {
         background: rgb(246, 246, 246);
@@ -10,8 +10,7 @@ $circle_cof: 40px;
           flex-direction: column;
           .head {
             width: 100%;
-            height: 100vh;
-            height: 450px;
+            height: 470px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -32,8 +31,8 @@ $circle_cof: 40px;
               background-image: url(/images/lightbringer-trans.png);
               background-color: rgb(234, 242, 244);
               width: 48%;
-              min-width: 330px;
-              min-height: 360px;
+              min-width: 335px;
+              min-height: 380px;
               background-position: center;
               background-repeat: no-repeat;
               background-size: contain;
@@ -45,7 +44,7 @@ $circle_cof: 40px;
               align-content: center;
               justify-content: space-between;
               align-items: flex-start;
-              min-height: 420px;
+              min-height: 435px;
               .title {
                 display: none;
               }
@@ -131,6 +130,7 @@ $circle_cof: 40px;
               .details {
                 p {
                   font-size: 1em;
+                  line-height: 1.25em;
                   font-family: "OpenSans-Light";
                   color: rgb(40, 40, 40);
                   text-align: left;
@@ -146,6 +146,7 @@ $circle_cof: 40px;
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
+                margin: 15px 0 0;
                 .title_select {
                   display: block;
                   font-family: "OpenSans-Bold";
@@ -275,6 +276,7 @@ $circle_cof: 40px;
                 }  
               }
               .add_button {
+                margin-top: 15px;
                 font-family: "OpenSans-Bold";
                 button {
                   background-color: rgb(138, 230, 207);
@@ -374,7 +376,7 @@ $circle_cof: 40px;
       }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body .container .head .info .size .selection form input:nth-child(4) {
     display: none;
   }
