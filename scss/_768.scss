@@ -213,6 +213,7 @@ $circle_cof: 40px;
                         &:checked::after {
                             box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, .35);
                             font-size: 1.25em;
+                            line-height: 1.25em;
                         }
                     }
                   }
@@ -370,4 +371,10 @@ $circle_cof: 40px;
           }
         } 
       }
+}
+
+@media screen and (min-width: 768px) {
+  body .container .head .info .size .selection form input:nth-child(4) {
+    display: none;
+  }
 }
