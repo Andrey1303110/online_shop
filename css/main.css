@@ -1838,7 +1838,16 @@ select {
     min-width: 280px;
     min-height: 100px;
     left: 10px;
+    top: 50vh;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all .45s ease-in-out;
+    transition: all .45s ease-in-out;
+  }
+  body .container .head .info .share #share_panel.active {
     top: -15px;
+    opacity: 1;
+    z-index: 1;
   }
   body .container .head .info .share #share_panel .icons {
     width: 100%;
@@ -2339,7 +2348,16 @@ select {
     min-width: 280px;
     min-height: 100px;
     left: 10px;
+    top: 50vh;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all .45s ease-in-out;
+    transition: all .45s ease-in-out;
+  }
+  body .container .head .info .share #share_panel.active {
     top: -15px;
+    opacity: 1;
+    z-index: 1;
   }
   body .container .head .info .share #share_panel .icons {
     width: 100%;
@@ -2839,8 +2857,18 @@ select {
     position: absolute;
     min-width: 400px;
     min-height: 160px;
+    -webkit-transform: translate(15%, 150%);
+            transform: translate(15%, 150%);
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all .45s ease-in-out;
+    transition: all .45s ease-in-out;
+  }
+  body .container .head .info .share #share_panel.active {
     -webkit-transform: translate(15%, -15%);
             transform: translate(15%, -15%);
+    opacity: 1;
+    z-index: 1;
   }
   body .container .head .info .share #share_panel .icons {
     width: 100%;

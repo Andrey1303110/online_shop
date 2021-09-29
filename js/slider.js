@@ -1,6 +1,28 @@
 let width = window.innerWidth;
 let left = document.querySelector('#left');
 let right = document.querySelector('#right');
+let share_button = document.querySelector('#share_button');
+let share_panel = document.querySelector('#share_panel');
+let close_but = document.querySelector('#close');
+
+/*window.addEventListener('resize', function(){
+    let width = window.innerWidth;
+    if (width < 480) {
+        document.location.reload();
+    }
+}, true);*/
+
+
+if (width > 992) {
+    share_button.addEventListener('click', e => {
+        share_panel.classList.add('active');
+    });
+    
+    close_but.addEventListener('click', e => {
+        share_panel.classList.remove('active');
+    });
+    
+}
 
 if (width < 480) {
     document.addEventListener('click', event => {
