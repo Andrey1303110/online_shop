@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     $circle_cof: 32px;
         body {
             background: rgb(246, 246, 246);
@@ -33,7 +33,7 @@
                   background-color: rgb(234, 242, 244);
                   width: 50%;
                   min-width: 225px;
-                  min-height: 300px;
+                  min-height: 315px;
                   background-position: center;
                   background-repeat: no-repeat;
                   background-size: contain;
@@ -45,7 +45,7 @@
                   align-content: center;
                   justify-content: space-between;
                   align-items: flex-start;
-                  min-height: 350px;
+                  min-height: 370px;
                   .title {
                     display: none;
                   }
@@ -131,6 +131,7 @@
                   .details {
                     p {
                       font-size: .7em;
+                      line-height: 1.15em;
                       font-family: "OpenSans-Light";
                       color: rgb(40, 40, 40);
                       text-align: left;

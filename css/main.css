@@ -100,7 +100,7 @@ select {
   color: #2c303d;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
   body {
     background: #f6f6f6;
   }
@@ -181,8 +181,8 @@ select {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: 50vh;
-    min-height: 500px;
+    height: 70vh;
+    min-height: 600px;
     max-height: 700px;
   }
   body .container .head .info .title {
@@ -291,6 +291,7 @@ select {
   }
   body .container .head .info .details p {
     font-size: 1em;
+    line-height: 1.35em;
     font-family: "OpenSans-Light";
     color: #282828;
     text-align: left;
@@ -616,7 +617,7 @@ select {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   body {
     background: #f6f6f6;
   }
@@ -669,7 +670,7 @@ select {
     background-color: #eaf2f4;
     width: 50%;
     min-width: 225px;
-    min-height: 300px;
+    min-height: 315px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -691,7 +692,7 @@ select {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-height: 350px;
+    min-height: 370px;
   }
   body .container .head .info .title {
     display: none;
@@ -798,6 +799,7 @@ select {
   }
   body .container .head .info .details p {
     font-size: .7em;
+    line-height: 1.15em;
     font-family: "OpenSans-Light";
     color: #282828;
     text-align: left;
@@ -1114,7 +1116,7 @@ select {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   body {
     background: #f6f6f6;
   }
@@ -1132,8 +1134,7 @@ select {
   }
   body .container .head {
     width: 100%;
-    height: 100vh;
-    height: 450px;
+    height: 470px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1165,8 +1166,8 @@ select {
     background-image: url(/images/lightbringer-trans.png);
     background-color: #eaf2f4;
     width: 48%;
-    min-width: 330px;
-    min-height: 360px;
+    min-width: 335px;
+    min-height: 380px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1188,7 +1189,7 @@ select {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-height: 420px;
+    min-height: 435px;
   }
   body .container .head .info .title {
     display: none;
@@ -1295,6 +1296,7 @@ select {
   }
   body .container .head .info .details p {
     font-size: 1em;
+    line-height: 1.25em;
     font-family: "OpenSans-Light";
     color: #282828;
     text-align: left;
@@ -1318,6 +1320,7 @@ select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 15px 0 0;
   }
   body .container .head .info .size .title_select, body .container .head .info .color .title_select {
     display: block;
@@ -1497,6 +1500,7 @@ select {
             box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.35);
   }
   body .container .head .info .add_button {
+    margin-top: 15px;
     font-family: "OpenSans-Bold";
   }
   body .container .head .info .add_button button {
@@ -1606,13 +1610,13 @@ select {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body .container .head .info .size .selection form input:nth-child(4) {
     display: none;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1280px) {
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
   body {
     background: #f6f6f6;
   }
@@ -2113,7 +2117,7 @@ select {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1600px) {
+@media only screen and (min-width: 1280px) and (max-width: 1600px) {
   body {
     background: #f6f6f6;
   }
@@ -2611,7 +2615,7 @@ select {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
   body {
     background: #f6f6f6;
   }
