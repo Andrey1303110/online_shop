@@ -317,6 +317,9 @@ $circle_cof: 40px;
               align-content: center;
               justify-content: space-between;
               align-items: center;
+              .arrows { 
+                display: none;
+              }
               .product {
                 width: 48%;
                 min-width: 325px;

@@ -325,6 +325,9 @@
               align-content: center;
               justify-content: space-between;
               align-items: center;
+              .arrows { 
+                display: none;
+              }
               .product {
                 width: 30%;
                 min-width: 265px;

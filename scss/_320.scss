@@ -332,8 +332,16 @@
                   flex-direction: row;
                   flex-wrap: wrap;
                   align-content: center;
-                  justify-content: center;
+                  justify-content: space-evenly;
                   align-items: center;
+                  .arrows {
+                    transform: translateY(-50%);
+                    filter: grayscale(1) contrast(.35);
+                    transition: all .1s ease-in-out;
+                    &:active {
+                      filter: grayscale(0) contrast(1);
+                    }
+                  }
                   .product {
                     position: relative;
                     width: 60%;
@@ -360,7 +368,7 @@
                       right: -45px;
                       transform: translateY(-100%);
                     }*/
-                    &:not(:nth-child(1)) {
+                    &:not(:nth-child(3)) {
                       display: none;
                     }
                     .bg_image {
