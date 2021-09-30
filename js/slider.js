@@ -4,13 +4,27 @@ let right = document.querySelector('#right');
 let share_button = document.querySelector('#share_button');
 let share_panel = document.querySelector('#share_panel');
 let close_but = document.querySelector('#close');
+let products = document.querySelectorAll('.product');
 
-/*window.addEventListener('resize', function(){
-    let width = window.innerWidth;
-    if (width < 480) {
-        document.location.reload();
+window.addEventListener('resize', function(){
+    width = window.innerWidth;
+    left = document.querySelector('#left');
+    right = document.querySelector('#right');
+    share_button = document.querySelector('#share_button');
+    share_panel = document.querySelector('#share_panel');
+    close_but = document.querySelector('#close');
+
+    if (width <= 480) {
+        slide('initial');
     }
-}, true);*/
+    if (width > 480) {
+        for (var l = 0; l < products.length; ++l) {
+            products[l].style.transform = 'translateX(0px)';
+        }
+    }
+
+    
+}, true);
 
 
 if (width > 992) {
@@ -37,7 +51,6 @@ if (width < 480) {
     let count = 1;
     
     function slide(direction) {
-        let products = document.querySelectorAll('.product');
         let margin = (width/100*15)*2;
         let image_width = 235;
         let first_position = ((image_width + margin) * (products.length-1))/2;
