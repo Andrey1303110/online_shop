@@ -1,1 +1,1 @@
-# made by Patushenko Andrey with love <3
+# made with love by Patushenko Andrey  <3
