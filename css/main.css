@@ -280,6 +280,12 @@ select {
     height: 35px;
     border: solid 2px #2c87ce;
     border-radius: 50%;
+    -webkit-transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+    transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+  }
+  body .container .head .info .share #share_panel .icons a:active {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   body .container .head .info .share #share_panel .icons a img {
     width: 100%;
@@ -856,6 +862,12 @@ select {
     height: 32px;
     border: solid 2px #2c87ce;
     border-radius: 50%;
+    -webkit-transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+    transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+  }
+  body .container .head .info .share #share_panel .icons a:active {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   body .container .head .info .share #share_panel .icons a img {
     width: 100%;
@@ -1356,6 +1368,12 @@ select {
     height: 40px;
     border: solid 2px #2c87ce;
     border-radius: 50%;
+    -webkit-transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+    transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+  }
+  body .container .head .info .share #share_panel .icons a:active {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   body .container .head .info .share #share_panel .icons a img {
     width: 100%;
@@ -1878,6 +1896,18 @@ select {
     height: 35px;
     border: solid 2px #2c87ce;
     border-radius: 50%;
+    -webkit-transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+    transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+  }
+  body .container .head .info .share #share_panel .icons a:hover {
+    -webkit-transition: ease .35s;
+    transition: ease .35s;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  body .container .head .info .share #share_panel .icons a:active {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   body .container .head .info .share #share_panel .icons a img {
     width: 100%;
@@ -1889,6 +1919,12 @@ select {
     height: 35px;
     padding: 5px;
     cursor: pointer;
+  }
+  body .container .head .info .share #share_panel .icons #close:hover {
+    -webkit-transition: ease .35s;
+    transition: ease .35s;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   body .container .head .info .details p {
     font-size: 1em;
@@ -2386,8 +2422,20 @@ select {
   body .container .head .info .share #share_panel .icons a {
     width: 35px;
     height: 35px;
-    border: solid 2px #2c87ce;
+    border: solid 3px #2c87ce;
     border-radius: 50%;
+    -webkit-transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+    transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+  }
+  body .container .head .info .share #share_panel .icons a:hover {
+    -webkit-transition: ease .35s;
+    transition: ease .35s;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  body .container .head .info .share #share_panel .icons a:active {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   body .container .head .info .share #share_panel .icons a img {
     width: 100%;
@@ -2400,8 +2448,15 @@ select {
     padding: 5px;
     cursor: pointer;
   }
+  body .container .head .info .share #share_panel .icons #close:hover {
+    -webkit-transition: ease .35s;
+    transition: ease .35s;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   body .container .head .info .details p {
     font-size: 1.15em;
+    line-height: 1.15em;
     font-family: "OpenSans-Light";
     color: #282828;
     text-align: left;
@@ -2689,11 +2744,24 @@ select {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: 24px;
     line-height: 24px;
+    min-height: 24px;
+    max-height: 30px;
+    height: 10%;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .container .down .products .product .bg_image .pr_price span {
-    margin: 0 10px;
+    margin: 0 15px;
   }
   body .container .down .products .product .bg_image .pr_price span:nth-child(2) {
     color: #ce2c52;
@@ -2897,8 +2965,20 @@ select {
   body .container .head .info .share #share_panel .icons a {
     width: 50px;
     height: 50px;
-    border: solid 2px #2c87ce;
+    border: solid 4px #2c87ce;
     border-radius: 50%;
+    -webkit-transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+    transition: all 0.45s cubic-bezier(0.8, 0.1, 0, 2.5);
+  }
+  body .container .head .info .share #share_panel .icons a:hover {
+    -webkit-transition: ease .35s;
+    transition: ease .35s;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  body .container .head .info .share #share_panel .icons a:active {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
   body .container .head .info .share #share_panel .icons a img {
     width: 100%;
@@ -2911,8 +2991,15 @@ select {
     padding: 5px;
     cursor: pointer;
   }
+  body .container .head .info .share #share_panel .icons #close:hover {
+    -webkit-transition: ease .35s;
+    transition: ease .35s;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   body .container .head .info .details p {
     font-size: 1.75em;
+    line-height: 1.4em;
     font-family: "OpenSans-Light";
     color: #282828;
     text-align: left;
@@ -3205,11 +3292,24 @@ select {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: 24px;
     line-height: 24px;
+    min-height: 30px;
+    max-height: 45px;
+    height: 10%;
+    line-height: 1.75em;
+    font-size: 1.75em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body .container .down .products .product .bg_image .pr_price span {
-    margin: 0 10px;
+    margin: 0 20px;
   }
   body .container .down .products .product .bg_image .pr_price span:nth-child(2) {
     color: #ce2c52;

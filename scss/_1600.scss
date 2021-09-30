@@ -130,8 +130,16 @@
                           //transform: translateY(15%);
                           width: 50px;
                           height: 50px;
-                          border: solid 2px rgb(44, 135, 206);
+                          border: solid 4px rgb(44, 135, 206);
                           border-radius: 50%;
+                          transition: all .45s cubic-bezier(0.8, 0.1, 0, 2.5);
+                          &:hover {
+                            transition: ease .35s;
+                            transform: scale(1.2);
+                          }
+                          &:active {
+                            transform: scale(.75);
+                          }
                           img {
                             width: 100%;
                             height: 100%;
@@ -144,6 +152,10 @@
                           height: 50px;
                           padding: 5px;
                           cursor: pointer;
+                          &:hover {
+                            transition: ease .35s;
+                            transform: rotate(180deg);
+                          }
                         }
                       }
                     }
@@ -151,6 +163,7 @@
                   .details {
                     p {
                       font-size: 1em * $font_cof;
+                      line-height: 1.4em;
                       font-family: "OpenSans-Light";
                       color: rgb(40, 40, 40);
                       text-align: left;
@@ -365,10 +378,17 @@
                         right: 0;
                         background-color: rgb(138, 230, 207);
                         width: fit-content;
-                        height: 24px;
                         line-height: 24px;
+                        min-height: 30px;
+                        max-height: 45px;
+                        height: 10%;
+                        line-height: 1.75em;
+                        font-size: 1.75em;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                         span {
-                          margin: 0 10px;
+                          margin: 0 20px;
                           &:nth-child(2) {
                             color: rgb(206, 44, 82);
                           }

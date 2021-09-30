@@ -133,6 +133,14 @@
                       height: 35px;
                       border: solid 2px rgb(44, 135, 206);
                       border-radius: 50%;
+                      transition: all .45s cubic-bezier(0.8, 0.1, 0, 2.5);
+                      &:hover {
+                        transition: ease .35s;
+                        transform: scale(1.2);
+                      }
+                      &:active {
+                        transform: scale(.75);
+                      }
                       img {
                         width: 100%;
                         height: 100%;
@@ -144,6 +152,10 @@
                       height: 35px;
                       padding: 5px;
                       cursor: pointer;
+                      &:hover {
+                        transition: ease .35s;
+                        transform: rotate(180deg);
+                      }
                     }
                   }
                 }
