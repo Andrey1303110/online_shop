@@ -333,6 +333,9 @@
                   text-align: center;
                   min-height: 1.5em;
                 }
+                @media only screen and (min-width: 403px) and (max-width: 480px) {
+                  padding: 0 10%;
+                }
                 #arrows {
                   display: flex;
                   flex-direction: row;
@@ -340,7 +343,7 @@
                   justify-content: space-between;
                   align-items: center;
                   width: 100%;
-                  padding: 0 1%;
+                  padding: 0 2%;
                   position: absolute;
                   top: 50%;
                   transform: translateY(-50%);
