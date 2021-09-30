@@ -86,3 +86,14 @@ if (width < 480) {
     
     slide('initial');
 }
+
+let icons_a = document.querySelectorAll('#share_panel .icons a')
+for (let d = 0; d < icons_a.length; d++) {
+    icons_a[d].addEventListener('click', function(e) {
+        e.preventDefault();
+        let href = this.href;
+        setTimeout(function() {
+            window.open(href, '_blank');
+         }, 750);
+    })
+}
