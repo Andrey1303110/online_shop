@@ -1871,7 +1871,7 @@ select {
     width: 100%;
     height: 80%;
     min-height: 100px;
-    background-image: url("../images/share_bg.png");
+    background-image: url("../images/share_bg_shadow.png");
     background-position: center 5px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -2399,7 +2399,7 @@ select {
     width: 100%;
     height: 80%;
     min-height: 100px;
-    background-image: url("../images/share_bg.png");
+    background-image: url("../images/share_bg_shadow.png");
     background-position: center 5px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -2942,7 +2942,7 @@ select {
     width: 100%;
     height: 80%;
     min-height: 155px;
-    background-image: url("../images/share_bg.png");
+    background-image: url("../images/share_bg_shadow.png");
     background-position: center 10px;
     background-repeat: no-repeat;
     background-size: 100%;
