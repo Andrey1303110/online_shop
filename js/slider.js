@@ -94,6 +94,6 @@ for (let d = 0; d < icons_a.length; d++) {
         let href = this.href;
         setTimeout(function() {
             window.open(href, '_blank');
-         }, 750);
+         }, 850);
     })
 }
