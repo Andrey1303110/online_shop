@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
 $font_cof: 1.15;
 $circle_cof: 55px;
     body {
@@ -22,7 +22,7 @@ $circle_cof: 55px;
               display: none;
             }
             .image {
-              background-image: url(/images/lightbringer-trans.png);
+              background-image: url('../images/lightbringer-trans.png');
               background-color: rgb(234, 242, 244);
               width: 45%;
               height: 100%;
@@ -88,7 +88,7 @@ $circle_cof: 55px;
                   height: 15px;
                   width: 15px;
                   margin: 0 1.5px;
-                  background: url(/images/icons/rating.png) round;
+                  background: url('../images/icons/rating.png') round;
                   cursor: pointer;
                   filter: grayscale(1);
                 }
@@ -118,7 +118,7 @@ $circle_cof: 55px;
                     width: 100%;
                     height: 80%;
                     min-height: 100px;
-                    background-image: url(/images/share_bg.png);
+                    background-image: url('../images/share_bg.png');
                     background-position: center 5px;
                     background-repeat: no-repeat;
                     background-size: 100%;

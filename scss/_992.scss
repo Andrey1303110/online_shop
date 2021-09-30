@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
     body {
         background: rgb(246, 246, 246);
         .container {
@@ -20,7 +20,7 @@
               display: none;
             }
             .image {
-              background-image: url(/images/lightbringer-trans.png);
+              background-image: url('../images/lightbringer-trans.png');
               background-color: rgb(234, 242, 244);
               width: 48%;
               min-width: 400px;
@@ -89,7 +89,7 @@
                   height: 15px;
                   width: 15px;
                   margin: 0 1.5px;
-                  background: url(/images/icons/rating.png) round;
+                  background: url('../images/icons/rating.png') round;
                   cursor: pointer;
                   filter: grayscale(1);
                 }
@@ -119,7 +119,7 @@
                     width: 100%;
                     height: 80%;
                     min-height: 100px;
-                    background-image: url(/images/share_bg.png);
+                    background-image: url('../images/share_bg.png');
                     background-position: center 5px;
                     background-repeat: no-repeat;
                     background-size: 100%;

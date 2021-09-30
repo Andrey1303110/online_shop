@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     $circle_cof: 35px;
         body {
             background: rgb(246, 246, 246);
@@ -31,7 +31,7 @@
                   padding: 0 35px;
                 }
                 .image {
-                  background-image: url(/images/lightbringer-trans.png);
+                  background-image: url('../images/lightbringer-trans.png');
                   background-color: rgb(234, 242, 244);
                   width: 100%;
                   min-width: 320px;
@@ -97,7 +97,7 @@
                       height: 15px;
                       width: 15px;
                       margin: 0 1.5px;
-                      background: url(/images/icons/rating.png) round;
+                      background: url('../images/icons/rating.png') round;
                       cursor: pointer;
                       filter: grayscale(1);
                     }
@@ -366,7 +366,7 @@
                     transition: all linear .35s;
                     margin: 0 15%;
                     /*&::before {
-                      content: url('/images/icons/perv.png');
+                      content: url('../images/icons/perv.png');
                       font-size: 20px;
                       position: absolute;
                       top: 50%;
@@ -377,7 +377,7 @@
                       }
                     }
                     &::after {
-                      content: url('/images/icons/NEXT.png');
+                      content: url('../images/icons/NEXT.png');
                       font-size: 20px;
                       position: absolute;
                       top: 50%;

@@ -100,7 +100,7 @@ select {
   color: #2c303d;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     background: #f6f6f6;
   }
@@ -151,7 +151,7 @@ select {
     padding: 0 35px;
   }
   body .container .head .image {
-    background-image: url(/images/lightbringer-trans.png);
+    background-image: url("../images/lightbringer-trans.png");
     background-color: #eaf2f4;
     width: 100%;
     min-width: 320px;
@@ -240,7 +240,7 @@ select {
     height: 15px;
     width: 15px;
     margin: 0 1.5px;
-    background: url(/images/icons/rating.png) round;
+    background: url("../images/icons/rating.png") round;
     cursor: pointer;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -612,7 +612,7 @@ select {
     transition: all linear .35s;
     margin: 0 15%;
     /*&::before {
-                      content: url('/images/icons/perv.png');
+                      content: url('../images/icons/perv.png');
                       font-size: 20px;
                       position: absolute;
                       top: 50%;
@@ -623,7 +623,7 @@ select {
                       }
                     }
                     &::after {
-                      content: url('/images/icons/NEXT.png');
+                      content: url('../images/icons/NEXT.png');
                       font-size: 20px;
                       position: absolute;
                       top: 50%;
@@ -685,7 +685,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 479px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
     background: #f6f6f6;
   }
@@ -734,7 +734,7 @@ select {
     margin-bottom: 30px;
   }
   body .container .head .image {
-    background-image: url(/images/lightbringer-trans.png);
+    background-image: url("../images/lightbringer-trans.png");
     background-color: #eaf2f4;
     width: 50%;
     min-width: 225px;
@@ -814,7 +814,7 @@ select {
     height: 15px;
     width: 15px;
     margin: 0 1.5px;
-    background: url(/images/icons/rating.png) round;
+    background: url("../images/icons/rating.png") round;
     cursor: pointer;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -1187,7 +1187,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   body {
     background: #f6f6f6;
   }
@@ -1234,7 +1234,7 @@ select {
     margin-bottom: 30px;
   }
   body .container .head .image {
-    background-image: url(/images/lightbringer-trans.png);
+    background-image: url("../images/lightbringer-trans.png");
     background-color: #eaf2f4;
     width: 48%;
     min-width: 335px;
@@ -1314,7 +1314,7 @@ select {
     height: 15px;
     width: 15px;
     margin: 0 1.5px;
-    background: url(/images/icons/rating.png) round;
+    background: url("../images/icons/rating.png") round;
     cursor: pointer;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -1690,7 +1690,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
   body {
     background: #f6f6f6;
   }
@@ -1727,7 +1727,7 @@ select {
     display: none;
   }
   body .container .head .image {
-    background-image: url(/images/lightbringer-trans.png);
+    background-image: url("../images/lightbringer-trans.png");
     background-color: #eaf2f4;
     width: 48%;
     min-width: 400px;
@@ -1819,7 +1819,7 @@ select {
     height: 15px;
     width: 15px;
     margin: 0 1.5px;
-    background: url(/images/icons/rating.png) round;
+    background: url("../images/icons/rating.png") round;
     cursor: pointer;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -1853,7 +1853,7 @@ select {
     width: 100%;
     height: 80%;
     min-height: 100px;
-    background-image: url(/images/share_bg.png);
+    background-image: url("../images/share_bg.png");
     background-position: center 5px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -2203,7 +2203,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
   body {
     background: #f6f6f6;
   }
@@ -2240,7 +2240,7 @@ select {
     display: none;
   }
   body .container .head .image {
-    background-image: url(/images/lightbringer-trans.png);
+    background-image: url("../images/lightbringer-trans.png");
     background-color: #eaf2f4;
     width: 45%;
     height: 100%;
@@ -2329,7 +2329,7 @@ select {
     height: 15px;
     width: 15px;
     margin: 0 1.5px;
-    background: url(/images/icons/rating.png) round;
+    background: url("../images/icons/rating.png") round;
     cursor: pointer;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -2363,7 +2363,7 @@ select {
     width: 100%;
     height: 80%;
     min-height: 100px;
-    background-image: url(/images/share_bg.png);
+    background-image: url("../images/share_bg.png");
     background-position: center 5px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -2713,7 +2713,7 @@ select {
   }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1601px) {
   body {
     background: #f6f6f6;
   }
@@ -2750,7 +2750,7 @@ select {
     display: none;
   }
   body .container .head .image {
-    background-image: url(/images/lightbringer-trans.png);
+    background-image: url("../images/lightbringer-trans.png");
     background-color: #eaf2f4;
     width: 45%;
     height: 100%;
@@ -2839,7 +2839,7 @@ select {
     height: 30px;
     width: 30px;
     margin: 0 2px;
-    background: url(/images/icons/rating.png) round;
+    background: url("../images/icons/rating.png") round;
     cursor: pointer;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
@@ -2874,7 +2874,7 @@ select {
     width: 100%;
     height: 80%;
     min-height: 155px;
-    background-image: url(/images/share_bg.png);
+    background-image: url("../images/share_bg.png");
     background-position: center 10px;
     background-repeat: no-repeat;
     background-size: 100%;
